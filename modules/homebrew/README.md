@@ -25,6 +25,7 @@ Aliases
   - `brews` searches for a formula.
   - `brewu` updates and upgrades Homebrew packages and formulae.
   - `brewx` uninstalls a formula.
+  - `brews` lists running services.
 
 ### Homebrew Cask
 
