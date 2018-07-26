@@ -41,9 +41,11 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'prompt' \
   'ruby' \
+  'bundler' \
   'ssh' \
   'osx' \
-  'homebrew'
+  'homebrew' \
+  'git'
 
 #
 # Autosuggestions
