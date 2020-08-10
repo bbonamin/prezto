@@ -26,3 +26,19 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 
 alias local_network_devices='arp -a'
+export PATH="/usr/local/opt/mongodb@3.0/bin:$PATH"
+export PATH="/usr/local/opt/redis@3.2/bin:$PATH"
+export PATH="/Users/bcb/Library/Android/sdk/platform-tools:$PATH"
+
+export ANDROID_SDK="/Users/bcb/Library/Android/sdk"
+
+export VOLTA_HOME="/Users/bcb/.volta"
+grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export LDFLAGS="-L/usr/local/opt/readline/lib"
+export CPPFLAGS="-I/usr/local/opt/readline/include"
+export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
